@@ -11,7 +11,7 @@ h2 {
 
 
 header .logo img {
-  width: 160px;  
+  width: 250px;  
   height: auto;
 }
 
@@ -37,8 +37,8 @@ header .logo img {
 }
 
 .cookie-icon {
-  width: 26px;
-  height: 26px;
+  width: 10px;
+  height: 10px;
   object-fit: contain;
 }
 
