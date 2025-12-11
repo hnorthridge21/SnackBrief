@@ -1,36 +1,12 @@
-/* Color Palette */
-:root {
-  --purple: #4703A6;
-  --lavender: #D0D2F2;
-  --mint: #36D97D;
-  --gold: #D9B343;
-  --orange: #D9753B;
+/* --------------------------
+   SHARED PAGE STRUCTURE
+---------------------------*/
 
-  --text-dark: #2d2d2d;
-  --white: #ffffff;
-}
-
-/* General body styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: var(--lavender);
-  color: var(--text-dark);
-}
-
-/* Main content */
-main {
-  text-align: center;
-  margin: 6rem auto 6rem auto;
-  padding: 0 1rem;
-}
-
-/* Heading */
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  line-height: 1.3;
-  color: var(--purple);
+  background: #FDF8F4; /* soft cream */
+  color: #3B2F2F;      /* warm brown */
 }
 
 /* Header */
@@ -39,15 +15,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  background: var(--white);
-  z-index: 1000;
-  border-bottom: 4px solid var(--gold);
+  background: #FFF;
+  border-bottom: 2px solid #3B2F2F;
 }
 
 header .logo img {
-  width: 180px;
+  width: 190px;
   height: auto;
 }
 
@@ -62,9 +35,8 @@ header .logo img {
   padding: 10px 40px 10px 16px;
   font-size: 1rem;
   border-radius: 30px;
-  border: 2px solid var(--purple);
-  background: var(--white);
-  color: var(--text-dark);
+  border: 2px solid #3B2F2F;
+  background: #FFF;
 }
 
 .search-icon {
@@ -73,124 +45,59 @@ header .logo img {
   top: 50%;
   transform: translateY(-50%);
   width: 20px;
-  height: 20px;
   pointer-events: none;
 }
 
-/* Menu button */
-.menu-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 16px 28px;
-  border: 3px solid var(--purple);
-  background: var(--gold);
-  border-radius: 14px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  width: 100%;
-  max-width: 450px;
-  justify-content: center;
-  color: var(--white);
-  font-weight: bold;
-  transition: background 0.2s, transform 0.2s;
+/* Page title */
+.page-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 3rem 0 1.5rem;
 }
 
-.menu-btn:hover {
-  background: var(--orange);
-  transform: scale(1.03);
-}
-
-.cookie-icon {
-  width: 20px;
-  height: 20px;
-}
-
-/* Button row container */
-.button-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-/* Past prompts button */
-.past-btn {
-  display: inline-block;
-  padding: 14px 24px;
-  border: 2px solid #2d2d2d;
-  border-radius: 12px;
-  background: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-  color: #2d2d2d;
-  height: fit-content;
-  transition: background 0.2s, transform 0.2s;
-}
-
-.past-btn:hover {
-  background: #f0f0f0;
-  transform: scale(1.02);
-}
-
-
-/* Prompt box */
-.prompt-box {
-  margin: 2.5rem auto 0 auto;
-  padding: 1.8rem;
-  width: min(600px, 90%);
-  border: 3px solid var(--purple);
-  border-radius: 12px;
-  background: var(--white);
-}
-
-.prompt-box p {
+/* General content wrapper */
+.page-content {
+  max-width: 800px;
+  margin: 0 auto 6rem auto;
+  padding: 0 1.5rem;
   font-size: 1.1rem;
-  color: var(--text-dark);
-  margin: 0;
+  line-height: 1.6;
 }
 
-/* Footer */
+/* Footer nav */
 footer {
   position: fixed;
   bottom: 0;
+  background: #FFF;
+  border-top: 2px solid #3B2F2F;
   width: 100%;
-  background: var(--white);
-  border-top: 4px solid var(--gold);
 }
 
 footer nav ul {
+  list-style: none;
   display: flex;
   justify-content: space-around;
   padding: 1rem 0;
   margin: 0;
-  list-style: none;
 }
 
 footer nav ul li a {
   text-decoration: none;
-  color: var(--purple);
+  color: #3B2F2F;
   font-size: 1.1rem;
-  font-weight: bold;
-  transition: color 0.2s;
 }
 
-footer nav ul li a:hover {
-  color: var(--orange);
+/* Simple card layout for Archive */
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 500px) {
-  h2 {
-    font-size: 2rem;
-  }
-
-  .search {
-    width: 140px;
-  }
-
-  .menu-btn {
-    font-size: 1rem;
-    padding: 12px 20px;
-  }
+.prompt-card {
+  background: #FFF;
+  border: 2px solid #3B2F2F;
+  border-radius: 12px;
+  padding: 1.2rem;
 }
