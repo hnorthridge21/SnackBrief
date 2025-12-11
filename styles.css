@@ -106,6 +106,33 @@ header .logo img {
   height: 20px;
 }
 
+/* Button row container */
+.button-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Past prompts button */
+.past-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 2px solid #2d2d2d;
+  border-radius: 12px;
+  background: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #2d2d2d;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.past-btn:hover {
+  background: #f0f0f0;
+  transform: scale(1.02);
+}
+
+
 /* Prompt box */
 .prompt-box {
   margin: 2.5rem auto 0 auto;
