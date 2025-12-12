@@ -61,7 +61,6 @@ header .logo img {
 }
 
 footer {
-  position: fixed;
   bottom: 0;
   background: #FFF;
   border-top: 2px solid #3B2F2F;
@@ -87,7 +86,8 @@ footer nav ul li a {
 
 .archive-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: 1fr 1fr;
+
   gap: 1.5rem;
   margin-top: 2rem;
 }
