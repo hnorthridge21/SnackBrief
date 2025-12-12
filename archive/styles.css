@@ -27,9 +27,9 @@ header {
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  background: var #ffffff;
+  background: #ffffff;
   z-index: 1000;
-  border-bottom: 4px solid var #D9B343;
+  border-bottom: 4px solid #D9B343;
 }
 
 header .logo img {
@@ -47,8 +47,8 @@ header .logo img {
   padding: 10px 40px 10px 16px;
   font-size: 1rem;
   border-radius: 30px;
-  border: 2px solid var #4703A6;
-  background: var #ffffff;
+  border: 2px solid #4703A6;
+  background: #ffffff;
   color: var #2d2d2d;
 }
 
@@ -124,8 +124,8 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: var #ffffff;
-  border-top: 4px solid var #D9B343;
+  background: #ffffff;
+  border-top: 4px solid #D9B343;
 }
 
 footer nav ul {
@@ -138,12 +138,12 @@ footer nav ul {
 
 footer nav ul li a {
   text-decoration: none;
-  color: var #4703A6;
+  color: #4703A6;
   font-size: 1.1rem;
   font-weight: bold;
   transition: color 0.2s;
 }
 
 footer nav ul li a:hover {
-  color: var #D9753B;
+  color: #D9753B;
 }
