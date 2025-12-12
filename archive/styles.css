@@ -136,3 +136,28 @@ footer nav ul li a:hover {
   color: #D9753B;
 }
 
+/* Contact + Copyright Info */
+.site-info {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f7f2ff; /* light purple to match your palette */
+  color: #2d2d2d;
+  border-top: 2px solid #2d2d2d;
+  margin-top: 2rem;
+}
+
+.site-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.site-info p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.site-info .copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
