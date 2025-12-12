@@ -60,7 +60,7 @@ header .logo img {
   pointer-events: none;
 }
 
-/* MENU BUTTON ALSO WORKS AS <a> */
+/* MENU BUTTON (works for <a>) */
 .menu-btn {
   display: inline-flex;
   align-items: center;
@@ -115,20 +115,7 @@ header .logo img {
   transform: scale(1.02);
 }
 
-.prompt-box {
-  margin: 2.5rem auto 0 auto;
-  padding: 1.8rem;
-  width: min(600px, 90%);
-  border: 3px solid #4703A6;
-  border-radius: 12px;
-  background: #ffffff;
-}
-
-.prompt-box p {
-  font-size: 1.1rem;
-  color: #2d2d2d;
-  margin: 0;
-}
+/* PROMPT BOX CSS REMOVED */
 
 footer {
   position: fixed;
@@ -157,6 +144,4 @@ footer nav ul li a {
 footer nav ul li a:hover {
   color: #D9753B;
 }
-
-
 
