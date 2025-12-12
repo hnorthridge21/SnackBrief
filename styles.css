@@ -125,6 +125,18 @@ footer {
   border-top: 4px solid #D9B343;
 }
 
+
+
+footer::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #D9B76F; /* gold line */
+}
+
+
+
 footer nav ul {
   display: flex;
   justify-content: space-around;
