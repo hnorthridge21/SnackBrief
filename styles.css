@@ -56,7 +56,6 @@ header .logo img {
   height: 20px;
 }
 
-/* MENU BUTTON (works for <a>) */
 .menu-btn {
   display: inline-flex;
   align-items: center;
@@ -109,7 +108,6 @@ header .logo img {
   transform: scale(1.02);
 }
 
-/* PROMPT BOX CSS REMOVED */
 
 footer {
   position: fixed;
@@ -121,7 +119,7 @@ footer {
 
 
 footer nav {
-  border-bottom: 4px solid #D9B76F; /* gold line */
+  border-bottom: 4px solid #D9B76F;
 }
 
 
@@ -146,13 +144,12 @@ footer nav ul li a:hover {
   color: #D9753B;
 }
 
-/* Small Right-Aligned Contact Block */
 .site-info {
   text-align: right;
   padding: 0.5rem 1.5rem 1rem 1.5rem;
   font-size: 0.85rem;
   color: #2d2d2d;
-  background: transparent; /* keeps it minimal + matches any page */
+  background: transparent; 
 }
 
 .site-info p {
