@@ -1,264 +1,129 @@
-/* -----------------------------------
-   COLOR PALETTE
------------------------------------ */
-:root {
-  --purple: #4703A6;
-  --lavender: #D0D2F2;
-  --green: #36D97D;
-  --yellow: #D9B343;
-  --orange: #D9753B;
-  --text: #2d2d2d;
-  --bg: #D0D2F2;
-}
-
-/* -----------------------------------
-   BASE STYLES
------------------------------------ */
+/* GLOBAL LAYOUT */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background: #FFF5E1;
+  color: #2d2d2d;
 }
 
 main {
-  text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 8rem;
-  padding: 0 1.5rem;
+  padding: 2rem;
+  padding-bottom: 7rem;
+  max-width: 900px;
+  margin: auto;
 }
 
 h2 {
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  font-weight: 700;
-  color: var(--purple);
-  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  border-left: 10px solid #F87575;
+  padding-left: 10px;
 }
 
-/* -----------------------------------
-   HEADER
------------------------------------ */
+/* HEADER + LOGO */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 2rem;
-  background: #FFF;
-  border-bottom: 2px solid var(--purple);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  text-align: center;
+  padding: 1rem 1rem 2rem 1rem;
 }
 
 header .logo img {
-  width: 260px;
+  width: 240px;
   height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
 
-/* -----------------------------------
-   SEARCH BAR
------------------------------------ */
-.search {
-  position: relative;
-  width: 260px;
-}
-
-.search input {
-  width: 100%;
-  padding: 12px 45px 12px 16px;
-  font-size: 1.1rem;
-  border-radius: 30px;
-  border: 2px solid var(--purple);
-  background: white;
-}
-
-.search-icon {
-  position: absolute;
-  right: 14px;
-  top: 50%;
-  width: 22px;
-  height: 22px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-/* -----------------------------------
-   MENU BUTTON (Home Page)
------------------------------------ */
-.button-row {
+/* CATEGORY "PILL" BUTTONS */
+.top-buttons {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.menu-btn {
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
   gap: 12px;
+  flex-wrap: wrap;
+}
 
-  padding: 20px 40px;
-  border: 2.5px solid var(--purple);
-  background: white;
-  border-radius: 18px;
-  font-size: 1.4rem;
+.top-buttons button {
+  background: #FFE066;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
   cursor: pointer;
-
-  min-width: 420px;
-  transition: 0.2s;
-}
-
-.menu-btn:hover {
-  background: var(--lavender);
-  transform: scale(1.03);
-}
-
-.cookie-icon {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-}
-
-/* Smaller "Past Prompts" button */
-.past-btn {
-  display: inline-block;
-  padding: 14px 24px;
-  border: 2px solid var(--purple);
-  border-radius: 12px;
-  background: white;
-  text-decoration: none;
   font-size: 1rem;
-  color: var(--purple);
-  height: fit-content;
+  font-weight: bold;
+  color: #2d2d2d;
+  border: 2px solid #2d2d2d;
   transition: 0.2s;
 }
 
-.past-btn:hover {
-  background: var(--lavender);
-  transform: scale(1.03);
+.top-buttons button:hover {
+  background: #F87575;
+  color: white;
 }
 
-/* -----------------------------------
-   PROMPT BOX (Home Page)
------------------------------------ */
-.prompt-box {
-  margin: 3rem auto 0 auto;
-  padding: 2.2rem;
-  border: 2px solid var(--purple);
-  background: white;
-  width: min(700px, 90%);
-  border-radius: 16px;
+/* SECTION SPACING */
+section {
+  margin-top: 4rem;
 }
 
-.prompt-box p {
-  font-size: 1.3rem;
-  margin: 0;
-}
-
-/* -----------------------------------
-   ARCHIVE PAGE — Category Buttons
------------------------------------ */
-.archive-buttons {
+/* GRID LAYOUT */
+.grid {
   display: flex;
-  justify-content: center;
-  gap: 0.8rem;
-  margin: 2rem 0 2.5rem;
+  flex-wrap: wrap;
+  gap: 1.2rem;
 }
 
-.archive-btn {
-  padding: 10px 18px;
-  background: white;
-  border: 2px solid var(--purple);
-  border-radius: 20px;
-  text-decoration: none;
-  color: var(--purple);
-  font-size: 1rem;
-  transition: 0.2s;
-}
-
-archive-btn:hover {
-  background: var(--lavender);
-}
-
-/* -----------------------------------
-   ARCHIVE PAGE — Section Styling
------------------------------------ */
-.archive-section {
-  margin-bottom: 4rem;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-}
-
-/* One-column card layout */
-.card-column {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-.prompt-card {
-  background: white;
-  border: 2px solid var(--purple);
-  border-radius: 14px;
-  padding: 1.5rem;
-  text-align: left;
-}
-
-.card-img {
-  width: 100%;
+/* IMAGE CARDS */
+.card {
+  flex: 1 1 calc(33.33% - 1rem);
+  height: 180px;
+  background: #F8757544;
   border-radius: 12px;
-  margin-bottom: 1rem;
+  border: 2px solid #2d2d2d;
 }
 
-/* -----------------------------------
-   FOOTER NAVIGATION
------------------------------------ */
+.card.small {
+  height: 140px;
+  background: #FFE06655;
+}
+
+.card.big {
+  height: 230px;
+  background: #9AE6B455;
+  flex: 1 1 calc(50% - 1rem);
+}
+
+/* FOOTER NAV */
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   background: white;
-  border-top: 2px solid var(--purple);
+  border-top: 2px solid #2d2d2d;
 }
 
 footer nav ul {
   display: flex;
   justify-content: space-around;
-  padding: 1rem 0;
   margin: 0;
+  padding: 1rem 0;
   list-style: none;
 }
 
 footer nav ul li a {
   text-decoration: none;
-  color: var(--purple);
-  font-size: 1.2rem;
+  color: #2d2d2d;
+  font-size: 1.1rem;
 }
 
-/* -----------------------------------
-   RESPONSIVE
------------------------------------ */
-@media (max-width: 550px) {
-  header .logo img {
-    width: 190px;
+/* RESPONSIVE FOR MOBILE */
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
   }
-
+  .card.big {
+    flex: 1 1 100%;
+  }
   h2 {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
-
-  .search {
-    width: 180px;
-  }
-
-  .menu-btn {
-    m
+}
 
