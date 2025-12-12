@@ -99,7 +99,7 @@ section {
 }
 
 .image-grid img {
-  width: calc(50% - 0.6rem); /* exactly two per row */
+  width: auto;
   height: 220px;
   object-fit: cover;
   border-radius: 12px;
