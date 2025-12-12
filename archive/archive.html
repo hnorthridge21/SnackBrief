@@ -3,107 +3,68 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SnackBrief – Archive</title>
-  <link rel="stylesheet" href="../styles.css">
+  <title>SnackBrief - Archive</title>
+  <link rel="stylesheet" href="archive.css">
 </head>
 
 <body>
 
-<header>
-  <div class="logo">
-    <img src="../images/logo.png" alt="SnackBrief Logo">
-  </div>
-
-  <div class="search">
-    <input type="text" placeholder="Search archive">
-    <img src="../images/search.png" class="search-icon" alt="">
-  </div>
-</header>
-
-<main>
-
-  <!-- CATEGORY BUTTONS -->
-  <div class="archive-buttons">
-    <a href="#popular" class="archive-btn">Popular</a>
-    <a href="#recent" class="archive-btn">Recent</a>
-    <a href="#past" class="archive-btn">Past</a>
-  </div>
-
-  <!-- POPULAR SECTION -->
-  <section id="popular" class="archive-section">
-    <h2 class="section-title">🍪 Popular Snacks</h2>
-
-    <div class="card-column">
-
-      <div class="prompt-card">
-        <img src="../images/filler1.jpg" class="card-img" alt="">
-        <h3>Prompt Title One</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-
-      <div class="prompt-card">
-        <img src="../images/filler2.jpg" class="card-img" alt="">
-        <h3>Prompt Title Two</h3>
-        <p>Placeholder text describing a past creative prompt.</p>
-      </div>
-
+  <header>
+    <div class="logo">
+      <img src="../images/logo.png" alt="SnackBrief Logo">
     </div>
-  </section>
 
-  <!-- RECENT SECTION -->
-  <section id="recent" class="archive-section">
-    <h2 class="section-title">✨ Freshly Baked</h2>
+    <nav class="top-buttons">
+      <button onclick="document.getElementById('popular').scrollIntoView({behavior:'smooth'})">Popular Snacks</button>
+      <button onclick="document.getElementById('recent').scrollIntoView({behavior:'smooth'})">Recent Submissions</button>
+      <button onclick="document.getElementById('past').scrollIntoView({behavior:'smooth'})">Past Submissions</button>
+    </nav>
+  </header>
 
-    <div class="card-column">
+  <main>
 
-      <div class="prompt-card">
-        <img src="../images/filler3.jpg" class="card-img" alt="">
-        <h3>Recent Prompt 1</h3>
-        <p>Another placeholder description goes here.</p>
+    <!-- POPULAR -->
+    <section id="popular">
+      <h2>Popular Snacks</h2>
+      <div class="grid">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
       </div>
+    </section>
 
-      <div class="prompt-card">
-        <img src="../images/filler4.jpg" class="card-img" alt="">
-        <h3>Recent Prompt 2</h3>
-        <p>Example filler content for recent prompts.</p>
+    <!-- RECENT -->
+    <section id="recent">
+      <h2>Recent Submissions</h2>
+      <div class="grid">
+        <div class="card small"></div>
+        <div class="card small"></div>
+        <div class="card small"></div>
+        <div class="card small"></div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- PAST SECTION -->
-  <section id="past" class="archive-section">
-    <h2 class="section-title">📜 Snack History</h2>
-
-    <div class="card-column">
-
-      <div class="prompt-card">
-        <img src="../images/filler5.jpg" class="card-img" alt="">
-        <h3>Old Prompt #1</h3>
-        <p>Placeholder description for a past prompt.</p>
+    <!-- PAST -->
+    <section id="past">
+      <h2>Past Submissions</h2>
+      <div class="grid">
+        <div class="card big"></div>
+        <div class="card big"></div>
       </div>
+    </section>
 
-      <div class="prompt-card">
-        <img src="../images/filler6.jpg" class="card-img" alt="">
-        <h3>Old Prompt #2</h3>
-        <p>Another placeholder prompt description.</p>
-      </div>
+  </main>
 
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="archive.html">Archive</a></li>
-      <li><a href="../about/about.html">About</a></li>
-      <li><a href="../contribute/contribute.html">Contribute</a></li>
-    </ul>
-  </nav>
-</footer>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../contribute/contribute.html">Contribute</a></li>
+      </ul>
+    </nav>
+  </footer>
 
 </body>
 </html>
