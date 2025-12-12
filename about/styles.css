@@ -65,6 +65,9 @@ footer {
   border-top: 2px solid #3B2F2F;
   width: 100%;
 }
+footer nav {
+  border-bottom: 4px solid #D9B76F; /* gold line */
+}
 
 footer nav ul {
   list-style: none;
