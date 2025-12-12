@@ -23,10 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
   background: #ffffff;
-  z-index: 1000;
   border-bottom: 4px solid #D9B343;
 }
 
@@ -57,14 +54,12 @@ header .logo img {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  pointer-events: none;
 }
 
 /* MENU BUTTON (works for <a>) */
 .menu-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   padding: 16px 28px;
   border: 3px solid #4703A6;
   background: #D9B343;
@@ -72,7 +67,6 @@ header .logo img {
   font-size: 1.2rem;
   cursor: pointer;
   width: 100%;
-  max-width: 450px;
   justify-content: center;
   color: #ffffff;
   font-weight: bold;
@@ -94,7 +88,6 @@ header .logo img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 
 .past-btn {
