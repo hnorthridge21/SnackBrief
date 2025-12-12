@@ -193,29 +193,22 @@ footer a {
 footer a:hover {
   color: #D9753B;
 }
-/* Contact + Copyright Info */
+/* Small Right-Aligned Contact Block */
 .site-info {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: #f7f2ff; /* light purple to match your palette */
+  text-align: right;
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+  font-size: 0.85rem;
   color: #2d2d2d;
-  border-top: 2px solid #2d2d2d;
-  margin-top: 2rem;
-}
-
-.site-info h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
+  background: transparent; /* keeps it minimal + matches any page */
 }
 
 .site-info p {
-  margin: 0.3rem 0;
-  font-size: 1rem;
+  margin: 0.15rem 0;
 }
 
 .site-info .copyright {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  opacity: 0.75;
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  opacity: 0.7;
 }
 
