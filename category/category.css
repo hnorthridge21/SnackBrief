@@ -129,7 +129,7 @@ header {
   color: #2d2d2d;
 }
 
-/* BUTTONS BELOW PROMPT */
+
 .prompt-buttons {
   display: flex;
   gap: 20px;
@@ -169,7 +169,7 @@ footer {
   border-top: 4px solid #D9B343;
 }
 footer nav {
-  border-bottom: 4px solid #D9B76F; /* gold line */
+  border-bottom: 4px solid #D9B76F; 
 }
 
 footer ul {
@@ -191,13 +191,13 @@ footer a {
 footer a:hover {
   color: #D9753B;
 }
-/* Small Right-Aligned Contact Block */
+
 .site-info {
   text-align: right;
   padding: 0.5rem 1.5rem 1rem 1.5rem;
   font-size: 0.85rem;
   color: #2d2d2d;
-  background: transparent; /* keeps it minimal + matches any page */
+  background: transparent; 
 }
 
 .site-info p {
