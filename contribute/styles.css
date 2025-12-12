@@ -59,7 +59,36 @@ header .logo img {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #3B2F2F;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
 
+form textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+form button {
+  padding: 14px 24px;
+  border: 2px solid #3B2F2F;
+  background: white;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+form button:hover {
+  background: #3B2F2F;
+  color: white;
+} 
 footer {
   bottom: 0;
   background: #FFF;
