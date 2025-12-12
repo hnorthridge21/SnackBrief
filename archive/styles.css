@@ -48,7 +48,7 @@ header .logo img {
   border-radius: 30px;
   border: 2px solid #4703A6;
   background: #ffffff;
-  color: var #2d2d2d;
+  color: #2d2d2d;
 }
 
 .search-icon {
@@ -60,7 +60,6 @@ header .logo img {
   height: 20px;
   pointer-events: none;
 }
-
 
 .top-buttons {
   display: flex;
@@ -91,33 +90,24 @@ section {
   margin-top: 4rem;
 }
 
-/* GRID LAYOUT */
-.grid {
+/* --- IMAGE GRID: 2x2 --- */
+.image-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1.2rem;
 }
 
-
-.card {
-  flex: 1 1 calc(33.33% - 1rem);
-  height: 180px;
-  background: #F8757544;
+.image-grid img {
+  width: calc(50% - 0.6rem); /* exactly two per row */
+  height: 220px;
+  object-fit: cover;
   border-radius: 12px;
   border: 2px solid #2d2d2d;
+  background: #fff;
 }
 
-.card.small {
-  height: 140px;
-  background: #FFE06655;
-}
-
-.card.big {
-  height: 230px;
-  background: #9AE6B455;
-  flex: 1 1 calc(50% - 1rem);
-}
-
+/* FOOTER */
 footer {
   position: fixed;
   bottom: 0;
@@ -145,18 +135,4 @@ footer nav ul li a {
 footer nav ul li a:hover {
   color: #D9753B;
 }
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  justify-content: center;
-}
 
-.image-grid img {
-  width: calc(50% - 0.6rem);
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid #2d2d2d;
-  background: #fff;
-}
