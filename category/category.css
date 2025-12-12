@@ -127,3 +127,18 @@ footer nav ul li a:hover {
   height: 30px;
 }
 
+/* ---- PROMPT PLACEHOLDER ---- */
+
+.prompt-box {
+  margin-top: 3rem;
+  background: #ffffff;
+  border: 3px solid #4703A6;
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+  color: #4703A6;
+  font-weight: bold;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
