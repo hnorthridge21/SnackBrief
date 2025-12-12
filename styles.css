@@ -126,13 +126,8 @@ footer {
 }
 
 
-
-footer::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: #D9B76F; /* gold line */
+footer nav {
+  border-bottom: 4px solid #D9B76F; /* gold line */
 }
 
 
