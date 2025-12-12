@@ -162,6 +162,9 @@ header {
 }
 
 footer {
+  position: fixed; 
+  bottom: 0; 
+  width: 100%;
   background: #ffffff;
   border-top: 4px solid #D9B343;
 }
