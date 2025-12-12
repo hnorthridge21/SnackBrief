@@ -115,6 +115,9 @@ footer {
   background: #ffffff;
   border-top: 4px solid #D9B343;
 }
+footer nav {
+  border-bottom: 4px solid #D9B76F; /* gold line */
+}
 
 footer nav ul {
   display: flex;
