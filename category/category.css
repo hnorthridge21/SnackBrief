@@ -1,4 +1,4 @@
-/* GENERAL PAGE LAYOUT */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@ main h2 {
   color: #4703A6;
 }
 
-/* HEADER */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@ header {
   height: auto;
 }
 
-/* SEARCH BAR */
+
 .search {
   position: relative;
   width: 200px;
@@ -63,7 +63,7 @@ header {
   pointer-events: none;
 }
 
-/* CATEGORY GRID (2×2) */
+
 .category-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(180px, 260px));
@@ -99,7 +99,7 @@ header {
   object-fit: contain;
 }
 
-/* PROMPT SECTION */
+
 .prompt-wrapper {
   margin-top: 40px;
   display: flex;
@@ -108,7 +108,7 @@ header {
   gap: 22px;
 }
 
-/* Prompt Box */
+
 .prompt-box {
   width: 85%;
   max-width: 650px;
@@ -166,7 +166,6 @@ header {
   object-fit: contain;
 }
 
-/* FOOTER */
 footer {
   position: fixed;
   bottom: 0;
